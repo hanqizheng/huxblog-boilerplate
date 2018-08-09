@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Events"
+title:      "EventEmitter"
 subtitle:   "继续了解Events模块"
 date:       2018-07-07
 author:     "Han Qizheng"
