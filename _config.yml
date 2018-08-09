@@ -1,7 +1,7 @@
 # Site settings
 title: 良辰好景
 SEOTitle: My Blog | 韩启正
-header-img: img/indexBg.jpg
+header-img: img/contactBg.jpeg
 email: hanqizheng598@gmail.com
 description: ""
 keyword: ""
@@ -19,6 +19,7 @@ github_username:    hanqizheng
 
 
 # Build settings
+
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
@@ -47,12 +48,6 @@ kramdown:
 # Disqus settings
 #disqus_username: _your_disqus_short_name_
 
-# Duoshuo settings
-duoshuo_username: huxblog
-# Share component is depend on Comment so we can NOT use share only.
-duoshuo_share: true                     # set to false if you want to use Comment without Sharing
-
-
 
 
 # Analytics settings
@@ -74,25 +69,3 @@ sidebar-avatar: /img/avatar.jpeg      # use absolute URL, seeing it's used in bo
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
 featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
-
-
-
-# Friends
-friends: [
-    {
-        title: "Hux Blog",
-        href: "http://huangxuan.me"
-    },{
-        title: "Foo",
-        href: "#"
-    },{
-        title: "Bar",
-        href: "#"
-    },{
-        title: "Example Friends",
-        href: "#"
-    },{
-        title: "It helps SEO",
-        href: "#"
-    }
-]
