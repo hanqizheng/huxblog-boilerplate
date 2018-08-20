@@ -16,7 +16,7 @@ tags:
 
 那么这一节，我们来学习另一种异步方法，Generator.
 
-其实，他的地位很尴尬啊。。。前有[Promise](https://github.com/hanqizheng/Node.js-LearningDialog/blob/master/Node.js%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80/Promise.md),开辟了异步编程的新天地，后有[async](),作为异步编程的接班人，Generator更像是一种过度期的产物，但是还是要学习一下的（但因为是过度的，后面也用不是很多，所以明白基本的执行过程和原理我觉得就ok,所以介绍会简单)
+其实，他的地位很尴尬啊。。。前有[Promise](https://github.com/hanqizheng/Node.js-LearningDialog/blob/master/Node.js%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80/Promise.md),开辟了异步编程的新天地，后有[async](https://github.com/hanqizheng/Node.js-LearningDialog/blob/master/Node.js%E7%9B%B8%E5%85%B3%E5%9F%BA%E7%A1%80/Async.md),作为异步编程的接班人，Generator更像是一种过度期的产物，但是还是要学习一下的（但因为是过度的，后面也用不是很多，所以明白基本的执行过程和原理我觉得就ok,所以介绍会简单)
 
 ## 什么是Generator
 这里引用一下阮大侠的话，说的很清楚
@@ -56,7 +56,7 @@ hw.next()
 hw.next()
 // { value: undefined, done: true }
 ```
-有点感觉吗？其实学过C/C++的同学应该有点感觉了，这里的generator其实就是在内部创建了一个迭代器(iterator)。这个迭代器会遍历generator内部yield定义的每一个状态。直至完毕。上面的代码一共有三个状态(hello,world,ending)而迭代器却不止可以执行三遍，他可以执行很多变，但是超过yield定义的状态就只会得到undefined。
+有点感觉吗？其实学过C/C++的同学应该有点感觉了，这里的generator其实就是在内部创建了一个迭代器(iterator)。这个迭代器会遍历generator内部yield定义的每一个状态。直至完毕。上面的代码一共有三个状态(hello,world,ending)而迭代器却不止可以执行三遍，他可以执行很多遍，但是超过yield定义的状态就只会得到undefined。
 
 那也许会疑问（其实是我的疑问，不许笑！！），那iterator在哪儿呢？
 
